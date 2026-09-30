@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-high":"#e6e8ea","on-error-container":"#93000a","primary-fixed":"#d5e3ff","outline-variant":"#c3c6d0","surface-container-low":"#f2f4f6","on-tertiary-container":"#919cb3","tertiary":"#141f30","on-primary-container":"#7f9dd0","on-tertiary-fixed-variant":"#3c475a","secondary-fixed-dim":"#ffb77d","on-surface":"#191c1e","on-secondary-fixed":"#2f1500","surface-container-highest":"#e0e3e5","surface-container":"#eceef0","on-background":"#191c1e","tertiary-fixed-dim":"#bcc7de","secondary":"#904d00","background":"#f7f9fb","tertiary-container":"#293447","secondary-container":"#fe932c","surface-tint":"#405f8e","surface-bright":"#f7f9fb","inverse-primary":"#a9c8fc","on-secondary-container":"#663500","surface-dim":"#d8dadc","on-secondary":"#ffffff","error-container":"#ffdad6","tertiary-fixed":"#d8e3fb","primary-fixed-dim":"#a9c8fc","surface":"#f7f9fb","surface-container-lowest":"#ffffff","primary-container":"#0f3460","on-primary-fixed":"#001b3c","on-tertiary-fixed":"#111c2d","error":"#ba1a1a","secondary-fixed":"#ffdcc3","inverse-surface":"#2d3133","on-surface-variant":"#43474f","outline":"#747780","primary":"#001f41","on-primary-fixed-variant":"#274774","on-primary":"#ffffff","on-secondary-fixed-variant":"#6e3900","on-error":"#ffffff","on-tertiary":"#ffffff","surface-variant":"#e0e3e5","inverse-on-surface":"#eff1f3"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","margin-mobile":"1.25rem","space-sm":"0.5rem","margin":"3rem","gutter":"1.5rem","space-md":"1rem","space-xl":"2.5rem"},"fontFamily":{"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Merriweather"],"eyebrow-accent":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-hero-mobile":["Merriweather"],"headline-lg":["Merriweather"],"display-hero":["Merriweather"],"headline-lg-mobile":["Merriweather"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"38px","fontWeight":"700"}],"eyebrow-accent":["12px",{"lineHeight":"16px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"52px","fontWeight":"700"}],"display-hero":["56px",{"lineHeight":"68px","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="bg-primary text-on-primary py-1.5 px-6"><div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between font-label-sm text-label-sm tracking-wide gap-2"><div><span class="opacity-90">CBSE Affiliation No. 2130892</span><span class="mx-2 opacity-40">|</span><span class="opacity-90">School Code: 70412</span><span class="mx-2 opacity-40">|</span><span class="text-secondary-fixed-dim font-semibold">Admissions Open 2025-26</span></div><div class="flex items-center gap-4"><span><span class="opacity-75">Ph:</span> +91 98765 43210</span><span class="opacity-40">|</span><span>info@abcpublicschool.edu.in</span><div class="hidden lg:flex items-center gap-3 pl-2"><a class="text-secondary-fixed-dim hover:text-on-primary transition-colors" data-path="parent-portal" href="#">Parent Portal</a><a class="text-on-primary hover:text-secondary-fixed-dim transition-colors" data-path="pay-fees" href="#">Pay Fees</a><a class="text-on-primary hover:text-secondary-fixed-dim transition-colors" data-path="mandatory-disclosure" href="#">Mandatory Disclosure</a></div></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 flex items-center justify-between"><div class="flex items-center gap-4"><img alt="ABC Public School Official Crest" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W-ohZQRo_01Bai6nv6j1T8Xw32nx4eA4EoUkwtW_rKVYI9UNYdabR3A79iNiHH4q9aqj2ey4Bq8ZRS14i-wrUM3yNtKkSRe562biAfG5tGcX8hBb40ufksF80W9gAzvbGLlO49Zmzxh5sapyrt3ajBEsSqlbjFS2f4GhREt2I3uotx3h9VnzLA9vMv3FXrLPvMAOFWMun_bZ49CZmr-LRfFVWTxJcnIUK8Bq3QRpNKzuty6ACwNpXM-8U"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold leading-tight tracking-tight">ABC PUBLIC SCHOOL</span><span class="font-eyebrow-accent text-eyebrow-accent text-on-surface-variant font-medium">Affiliated to CBSE, New Delhi | Estd. 1994</span></div></div><nav class="hidden xl:flex items-center gap-6 font-label-md text-label-md" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="about-us" href="#">About Us</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="academics" href="#">Academics</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="facilities" href="#">Facilities</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="gallery" href="#">Gallery</a><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="contact-us" href="#">Contact</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-4 py-2 rounded font-label-sm text-label-sm shadow-[0_0_0_1px_rgba(217,119,6,0.2),0_4px_12px_rgba(217,119,6,0.12)] hover:bg-on-secondary-container transition-all" data-path="admissions-portal" href="#"><span class="w-2 h-2 rounded-full bg-surface-bright animate-ping"></span><span>Admission Open 2025-26</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION (#home) -->
+<section class="relative overflow-hidden bg-primary text-on-primary" id="home">
+<!-- Subtle Ambient Lighting Gradients -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-48 w-[32rem] h-[32rem] rounded-full bg-primary-fixed/10 blur-3xl pointer-events-none"></div>
+<!-- Hero Main Container -->
+<div class="relative max-w-7xl mx-auto px-6 py-16 md:py-24 lg:py-28 flex flex-col items-center text-center z-10">
+<!-- Institutional Accreditation Pill -->
+<div class="inline-flex items-center gap-2 bg-surface-container-lowest/10 backdrop-blur-md px-4 py-1.5 rounded-full mb-8 shadow-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Affiliated to CBSE, New Delhi • Estd. 1994</span>
+</div>
+<!-- Hero Headline with Distinguished Typography -->
+<h1 class="font-display-hero text-display-hero md:text-[64px] max-w-4xl tracking-tight leading-tight text-on-primary mb-6">
+        Welcome to <span class="text-secondary-fixed">ABC Public School</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-primary-fixed max-w-2xl leading-relaxed mb-10">
+        Empowering Young Minds for a Brighter Future — Nurturing Excellence, Character &amp; Innovation since 1994 with holistic 21st-century learning.
+      </p>
+<!-- Prominent Call-to-Actions -->
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-3.5 rounded-xl font-label-md text-label-md shadow-xl hover:bg-on-secondary-container transition-all hover:scale-105 active:scale-95" href="#admissions">
+<span>Apply for Admission 2025-26</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2.5 bg-surface-container-lowest/10 text-on-primary hover:bg-surface-container-lowest/20 px-7 py-3.5 rounded-xl font-label-md text-label-md backdrop-blur-sm transition-all hover:scale-105" href="#about">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Explore Our School</span>
+</a>
+</div>
+<!-- Quick Trust Indicators -->
+<div class="mt-12 flex flex-wrap justify-center items-center gap-6 text-on-primary-container font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span> Recognized CBSE Co-ed</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span> AI &amp; Robotics Labs</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span> Global Olympic Sports Hub</span>
+</div>
+</div>
+<!-- Live Heritage Stats Bar -->
+<div class="w-full bg-tertiary text-on-tertiary py-8 px-6 shadow-inner">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-none mb-1">30+</span>
+<div class="w-8 h-0.5 bg-secondary-fixed/50 mb-2"></div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wide">Years of Heritage</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-none mb-1">100%</span>
+<div class="w-8 h-0.5 bg-secondary-fixed/50 mb-2"></div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wide">CBSE Board Pass Rate</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-none mb-1">3,500+</span>
+<div class="w-8 h-0.5 bg-secondary-fixed/50 mb-2"></div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wide">Active Scholars</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-none mb-1">150+</span>
+<div class="w-8 h-0.5 bg-secondary-fixed/50 mb-2"></div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wide">Dedicated Faculty</span>
+</div>
+<div class="col-span-2 md:col-span-1 flex flex-col items-center">
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold leading-none mb-1">18-Acre</span>
+<div class="w-8 h-0.5 bg-secondary-fixed/50 mb-2"></div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wide">Lush Green Campus</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ABOUT OUR SCHOOL (#about) -->
+<section class="py-20 md:py-28 px-6 bg-surface" id="about">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col mb-16 max-w-2xl">
+<span class="font-eyebrow-accent text-eyebrow-accent uppercase tracking-widest text-secondary mb-2">Institutional Legacy</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Nurturing Intellectual Depth &amp; Moral Character</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column: Core Philosophy & Vision Cards -->
+<div class="lg:col-span-7 flex flex-col gap-8">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Rooted in timeless values and propelled by 21st-century experiential pedagogy, ABC Public School has stood at the vanguard of academic brilliance in Delhi-NCR since 1994. We believe that true education transfigures natural curiosity into enduring intellectual mastery, social sensitivity, and self-governing integrity.
+          </p>
+<!-- Core Pillars Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Academic Rigor</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous evaluation tailored to individual learning aptitudes.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Ethical Discipline</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fostering deep civic responsibility, empathy, and personal honor.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Creative Expression</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vibrant theater, fine arts, classical music, and literature circles.</p>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-4">
+<div class="p-2.5 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Global Vision</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preparing confident scholars equipped for premier world universities.</p>
+</div>
+</div>
+</div>
+<!-- Vision & Mission Callouts -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+<div class="p-6 rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="w-1.5 h-full absolute left-0 top-0 bg-secondary"></div>
+<div class="flex items-center gap-2 mb-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span class="uppercase tracking-wider">Our Vision</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">To be an iconic center of scholarly and ethical enlightenment, empowering youth to navigate global complexities with acumen and compassionate leadership.</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="w-1.5 h-full absolute left-0 top-0 bg-primary"></div>
+<div class="flex items-center gap-2 mb-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">flag</span>
+<span class="uppercase tracking-wider">Our Mission</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cultivating a dynamic, technology-enabled sanctuary of discovery where experiential inquiry, athletic fitness, and humanist ethics flourish harmoniously.</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Principal's Desk Message -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden p-6 md:p-8">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden mb-6 shadow-md bg-surface-container-high">
+<img alt="Dr. Geeta Sharma - Principal &amp; Educational Director" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoMKdwj0H6eXi4dKUXQ0-YX67ETesQMxw7Oj9c8eoUEHOpdFpgjzhQYU-MAQMM-VXuq8Ei0dujhp5NfuTs473GGRUjnH-p0zvmxdxePOyUjuYbuiqDpQbgyLI_4YuLovFj__hHobr5s-zVdYN12pm1Ekg_KRiM4q_QLzCQ_65QxwS-Ew5ute4vwFWzFdj7u_d1J0vce5wi2cS9zIh2HO9x5E-Sd1lItkyoZG0rkogSfUHdfuyFnN1g"/>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-secondary font-label-sm text-label-sm font-semibold shadow-sm">
+                From the Principal's Desk
+              </div>
+</div>
+<div class="relative pl-6 mb-6">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary rounded-full"></div>
+<p class="font-headline-md text-headline-md italic text-primary leading-snug">
+                “Education is not merely the accumulation of facts, but the ignition of intellect, character, and compassionate citizenship.”
+              </p>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              At ABC Public School, every student is welcomed as a unique reservoir of potential. We combine classic discipline with future-ready curricula, equipping our scholars with courage to lead and humility to serve.
+            </p>
+<div class="pt-4 bg-surface-container-low p-4 rounded-xl flex items-center justify-between">
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary">Dr. Geeta Sharma</h5>
+<span class="font-label-sm text-label-sm text-secondary block">M.A., M.Ed., Ph.D.</span>
+<span class="font-eyebrow-accent text-eyebrow-accent text-on-surface-variant">Principal &amp; Educational Director</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[32px]">history_edu</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ACADEMICS SECTION (#academics) -->
+<section class="py-20 md:py-28 px-6 bg-surface-container-low" id="academics">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-eyebrow-accent text-eyebrow-accent uppercase tracking-widest text-secondary mb-2 block">Pedagogical Framework</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Academic Pathways &amp; Holistic Curriculum</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Structured learning methodologies tailored to cognitive developmental stages under the CBSE National Curriculum Framework.
+        </p>
+</div>
+<!-- 4 Interactive Academic Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Primary Wing Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full text-secondary bg-secondary-fixed/30 font-label-sm text-label-sm font-bold">Ages 3 - 10</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Primary Wing</h3>
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary block mb-4">Nursery to Class V</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Experiential learning, phonics, foundational numeracy, arts, and play-way methodology in an emotionally secure and joyful environment.
+            </p>
+<ul class="flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant mb-6">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Activity-Based Phonics Mastery</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Motor Skills &amp; Clay Workshops</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Introductory Bilingual Oratory</li>
+</ul>
+</div>
+<div class="pt-4 bg-surface-container-low px-4 py-2.5 rounded-xl text-primary font-label-sm text-label-sm flex items-center justify-between">
+<span>Student-Teacher Ratio</span>
+<span class="font-bold">18 : 1</span>
+</div>
+</div>
+<!-- Middle School Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full text-primary bg-primary-fixed/40 font-label-sm text-label-sm font-bold">Ages 11 - 13</span>
+<span class="material-symbols-outlined text-primary text-[28px]">biotech</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Middle School</h3>
+<span class="font-eyebrow-accent text-eyebrow-accent text-primary block mb-4">Classes VI to VIII</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Inquiry-based STEM foundation, linguistic mastery, integrated lab sciences, social sciences, and experiential coding workshops.
+            </p>
+<ul class="flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant mb-6">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Inquiry Science Demonstrations</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Sanskrit, French &amp; Hindi Options</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>Applied Math Practical Labs</li>
+</ul>
+</div>
+<div class="pt-4 bg-surface-container-low px-4 py-2.5 rounded-xl text-primary font-label-sm text-label-sm flex items-center justify-between">
+<span>Student-Teacher Ratio</span>
+<span class="font-bold">22 : 1</span>
+</div>
+</div>
+<!-- Secondary School Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full text-tertiary bg-surface-container-high font-label-sm text-label-sm font-bold">Ages 14 - 15</span>
+<span class="material-symbols-outlined text-tertiary text-[28px]">psychology_alt</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Secondary School</h3>
+<span class="font-eyebrow-accent text-eyebrow-accent text-tertiary block mb-4">Classes IX &amp; X</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Rigorous CBSE board preparation, psychometric aptitude profiling, national Olympiad coaching, and analytical reasoning development.
+            </p>
+<ul class="flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant mb-6">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Regular Diagnostic Assessments</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Specialized Remedial Clinics</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>National Talent Search (NTSE) Prep</li>
+</ul>
+</div>
+<div class="pt-4 bg-surface-container-low px-4 py-2.5 rounded-xl text-primary font-label-sm text-label-sm flex items-center justify-between">
+<span>Student-Teacher Ratio</span>
+<span class="font-bold">24 : 1</span>
+</div>
+</div>
+<!-- Senior Secondary Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="px-3 py-1 rounded-full text-secondary bg-secondary-fixed/40 font-label-sm text-label-sm font-bold">Ages 16 - 18</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Senior Secondary</h3>
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary block mb-4">Classes XI &amp; XII</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Science (PCM/PCB), Commerce &amp; Humanities streams. Integrated NEET, JEE &amp; CUET preparation modules with 1-on-1 career counseling.
+            </p>
+<ul class="flex flex-col gap-2 font-label-sm text-label-sm text-on-surface-variant mb-6">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>JEE / NEET In-House Mentors</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Global College Essay Guidance</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Research Internship Programs</li>
+</ul>
+</div>
+<div class="pt-4 bg-surface-container-low px-4 py-2.5 rounded-xl text-primary font-label-sm text-label-sm flex items-center justify-between">
+<span>Student-Teacher Ratio</span>
+<span class="font-bold">20 : 1</span>
+</div>
+</div>
+</div>
+<!-- Academic Excellence Highlights Banner -->
+<div class="mt-12 p-8 rounded-2xl bg-primary text-on-primary shadow-lg flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-6">
+<div class="p-4 rounded-xl bg-surface-container-lowest/10 text-secondary-fixed">
+<span class="material-symbols-outlined text-[40px]">military_tech</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md text-on-primary mb-1">Continuous Comprehensive Pedagogy</h4>
+<p class="font-body-md text-body-md text-primary-fixed">Faculty average tenure exceeds 12+ years with mandatory annual continuous professional development.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 shrink-0">
+<a class="px-6 py-3 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-container transition-all" href="#admissions">
+            Inquire for 2025-26
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: SCHOOL FACILITIES SECTION (#facilities) -->
+<section class="py-20 md:py-28 px-6 bg-surface" id="facilities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-16 max-w-3xl mx-auto">
+<span class="font-eyebrow-accent text-eyebrow-accent uppercase tracking-widest text-secondary mb-2">World-Class Infrastructure</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Inspiring Spaces for Active Discovery</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our purpose-built 18-acre campus creates an uplifting, safe, and technologically forward habitat where every passion finds room to flourish.</p>
+</div>
+<!-- 8 Facilities Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- 1. Smart Classrooms -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">tv_gen</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Interactive Tech</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Smart Classrooms</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Interactive 75" touch boards, ergonomic seating, sound dampening, and climate-controlled learning suites.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>100% Digital Enabled</span>
+</div>
+</div>
+<!-- 2. Science Labs -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Practical Research</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Advanced Science Labs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Specialized Physics, Chemistry, and Biology laboratories equipped with robotic sensor arrays and safety hoods.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>NABL Certified Safety</span>
+</div>
+</div>
+<!-- 3. Computer & AI Lab -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Future Ready</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Computer &amp; AI Lab</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            High-speed dedicated 1Gbps fiber connectivity, Python coding kits, machine learning sandboxes, and 3D printers.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>1:1 Student Machine Ratio</span>
+</div>
+</div>
+<!-- 4. Central Knowledge Library -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">local_library</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Literary Sanctuary</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Central Library</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            25,000+ curated volumes, digital catalogue, JSTOR academic access, quiet reading cubicles, and national journals.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Kindle &amp; E-Book Lending</span>
+</div>
+</div>
+<!-- 5. Multi-Sport Complex -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">sports_soccer</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Athletic Arena</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Multi-Sport Complex</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            FIFA-standard artificial turf football pitch, synthetic Olympic basketball courts, turf cricket nets, and 400m track.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>NIS Certified Coaches</span>
+</div>
+</div>
+<!-- 6. GPS Safe Transport -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">directions_bus</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Safety First</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Safe GPS Transport</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Fleet of 42 air-conditioned buses featuring live GPS tracking on parent app, interior CCTV, and trained female attendants.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Delhi NCR Coverage</span>
+</div>
+</div>
+<!-- 7. RO Purified Water -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">Pure Health</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">RO Purified Water</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Commercial multi-stage RO+UV water plants installed across every school floor with monthly certified water purity testing.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Chilled &amp; Normal Dispensers</span>
+</div>
+</div>
+<!-- 8. Health Infirmary -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">medical_services</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">24x7 Care</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Wellness Infirmary</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4">
+            Full-time qualified nursing staff, primary care beds, automated emergency AEDs, and immediate tie-ups with multi-specialty hospitals.
+          </p>
+<div class="mt-auto pt-3 flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>On-Campus Ambulance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: GALLERY SECTION (#gallery) -->
+<section class="py-20 md:py-28 px-6 bg-surface-container-low" id="gallery">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-eyebrow-accent text-eyebrow-accent uppercase tracking-widest text-secondary mb-2 block">Vibrant Campus Life</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Moments of Joy, Art &amp; Victory</h2>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap gap-2" id="gallery-filters">
+<button class="gallery-filter-btn px-4 py-2 rounded-full font-label-sm text-label-sm bg-primary text-on-primary transition-colors" data-filter="all">All Events</button>
+<button class="gallery-filter-btn px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="annual">Annual Function</button>
+<button class="gallery-filter-btn px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="sports">Sports Meet</button>
+<button class="gallery-filter-btn px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="cultural">Cultural Fest</button>
+<button class="gallery-filter-btn px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high transition-colors" data-filter="science">Science &amp; Tech</button>
+</div>
+</div>
+<!-- 6 Event Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+<!-- Card 1: Annual Day -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="annual cultural">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Indian school children in colorful traditional costumes performing a classical dance on a brightly lit grand auditorium stage with dramatic theatrical blue and gold spotlighting during an annual function celebration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwz8UihnNox-QDRn3myA3SZvUkhVJ0yjpP69oirpcnqIxBbtBYlCKFIopsTdTe6QZxNaICiBc3GKyID8MX-R9foFtnq9QD6q5BHLkyhqkrFFYW3Oscn1ELN_Ih77I_P6R_2QTSSpf1ycmqZ6sxAjl_P46ce2SjzN_j6SSchmLKWoZUUhKfW298uK7p90sLWzUAXQ2vy6OoXQ_jBdaUnL5wgcWdMLzKT7kZhBqm8r25cEMFc26dOoPG"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Dec 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">Annual Gala</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">29th Annual Day Celebration "Tarang"</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A spellbinding evening of theatrical storytelling, classical music, and choreography honoring cultural heritage.</p>
+</div>
+</div>
+<!-- Card 2: Sports Meet -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="sports">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High school student athletes in colorful athletic track uniforms marching in disciplined formation with school flags fluttering under a bright sunny sky on a lush green sports field with athletic tracks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGYG_QjKUc7BGZl4FxTNT0f6phewsLWD8yLlHfhNJNrscG7W6tJvlnMBZdERPeMapu4fHiDSfuv-G98hDFvSBAgZiBrDGuWtOiunVz-OQGzzgNlrjFbHowsL1kky7qVR3N_IX4A9ve00TuxA6SQx0Z7Kg0XaTjQ97STVR7-uqRw2ahpdw3nwyubVLC60FjGYyZFJcr7GkOTX-kTlmuVSmOoQkrgsgKh75VBIl9o17WFqdierJWr3GN"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Nov 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">Athletics</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Inter-School Athletic Meet &amp; March Past</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Over 40 regional schools competed in track and field, celebrating teamwork, sportsmanship, and endurance.</p>
+</div>
+</div>
+<!-- Card 3: Science Innovation -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="science">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Focused secondary school students presenting an autonomous renewable energy model with solar panels and robotics sensors to smiling judges in a bright modern school science exhibition hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmR_uZki9kKgBEW12MbT3WENAVIYQte3K7X9mMJMe-g6OjmQf1BDvZH9vyo0G5TQ2tlABAe-EvFxcxn_sh_Zl5ayNPnvMK6_A4lylmdsnhvxksBXjg61vO3L4qZNW1EQMSxXTU93gIZqZeSNU6_T-N4a1y0T6BObHuWNrJX9ImIjUHoWXjZad-FxPphpVN-7N7zp-8121UNA03kDz5bs-xhypYD5L9yzr5L_dnhaWhCEZRY6_1yQC"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Oct 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">Innovation</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">National Science Innovation Exhibition</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Showcasing working prototypes in clean energy, IoT environmental monitors, and automated sustainable agriculture.</p>
+</div>
+</div>
+<!-- Card 4: Cultural Fest -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="cultural">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Talented diverse Indian students playing sitar, tabla and acoustic guitars during an acoustic cultural inter-school music competition on a warm wood stage with ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnjCc2nb40fUlGILDfgVeSzi9g1vajstthCtEz26H4VrftYnJpJ-JcQY-buW7O9tt2KMPHJiI8W01Ve6BlD6wpUU13LTyWjV3HYQedIfO_PKwcyb33NxtqCd6E6ZWOZ69EJgL4QW9Z-N7f-ARql9KmPNttjExLpiOuzcD3C9NuhYVq604_If_Rou47erXZy1MJLPxcCoKwzxXwym18yR_eRSS2aez5GuaouVjO_akz6upTa5jXOFED"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Sep 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">Performing Arts</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Classical &amp; Contemporary Music Fest</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Harmonious fusion performances featuring Indian classical ragas and global acoustic ensembles.</p>
+</div>
+</div>
+<!-- Card 5: Robotics Hackathon -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="science">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High school students collaborating enthusiastically around a laptop and modular robotic rover vehicle during a national robotics coding championship in an advanced technology lab." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqP_saHk3UDxrZls4LERNsN9l_xjEN6ux_EdGixEi9HcW-M6hlPOQoeVNQdTfR5Lu-1JAZDFHVB56s_UbXOiy8_RYKkBgqljPrHPmOfm-Il7GpHoii_brirCGjYOo8S9tQCYnoTnb9ojzJB4Dqccu2NBui2wy22rYu_QQs3VBptv9RnnS9CDybajEOnNMyPpAa1aoNdGOHSoVvQ-tAxGk8uypDAP6pUPgm1fhye5__9-UfRCpqEfsv"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Aug 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">STEM Championship</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Robotics &amp; Coding Hackathon Champions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our senior team clinched 1st position with their autonomous search-and-rescue disaster management rover.</p>
+</div>
+</div>
+<!-- Card 6: Kindergarten Graduation -->
+<div class="gallery-card bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="annual">
+<div class="relative h-64 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Adorable kindergarten children in miniature blue graduation gowns and caps holding diplomas with delighted parents clapping in a sunlit decorated school hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqo7NPwb-XUm7e7ZespNmlhrAodatB2tvfVp4sUA7zZ8mfS0sKg_6ysDjVe0hDRcN-qheR4N3U8SKFwD8JFyk3p4N97ThSHc1soNnDDff0wpH3fFJU7nmZAYeambFDHbc2ttokKnJIbY9Jezsj9q5XlzYqqdTR06BxujaWuHglnjuRVuGABs87-46rwowh5W3_w3Wt220cg8zoYlAV6EyX_8oA0I2_vFFkXxf6BIIB2jfxbpUHwlZ3"/>
+<div class="absolute top-3 left-3 bg-primary text-on-primary px-3 py-1 rounded-md font-label-sm text-label-sm shadow-md">Jul 2024</div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary uppercase tracking-wider mb-1">Milestones</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Kindergarten Graduation Ceremony</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Celebrating foundational growth as our little scholars eagerly transition into formal Grade 1 schooling.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: ADMISSIONS SECTION (#admissions) -->
+<section class="py-20 md:py-28 px-6 bg-surface" id="admissions">
+<div class="max-w-7xl mx-auto">
+<!-- Admissions Banner Header -->
+<div class="rounded-3xl bg-primary text-on-primary p-8 md:p-12 mb-12 shadow-xl relative overflow-hidden">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-3.5 py-1 rounded-full font-label-sm text-label-sm font-semibold mb-4 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-surface-bright animate-ping"></span>
+<span>Limited Seats Available</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-3">Admissions Open for Session 2025-26</h2>
+<p class="font-body-md text-body-md text-primary-fixed">
+              Welcoming applications from Pre-Nursery to Class XI (Science, Commerce &amp; Humanities). Secure your child's pathway to global academic distinction.
+            </p>
+</div>
+<!-- 3-Step Procedure Callout -->
+<div class="bg-surface-container-lowest/10 backdrop-blur-md rounded-2xl p-6 lg:max-w-md shrink-0">
+<h4 class="font-headline-sm text-headline-sm text-secondary-fixed mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px]">route</span>
+<span>Simple 3-Step Process</span>
+</h4>
+<div class="flex flex-col gap-3 font-label-sm text-label-sm text-on-primary">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">1</span>
+<span>Submit Online Inquiry / Application</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">2</span>
+<span>Campus Visit &amp; Interactive Assessment</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">3</span>
+<span>Document Verification &amp; Enrollment</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Admission Inquiry Form Wrapper -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 md:p-12 shadow-xl">
+<div class="mb-8">
+<h3 class="font-headline-md text-headline-md text-primary mb-1">Online Admission Inquiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fill in the candidate details below and our admissions registrar will contact you within 24 operational hours.</p>
+</div>
+<form class="space-y-6" id="admission-form">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Student Full Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="student-name">Student Full Name *</label>
+<div class="relative">
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all shadow-inner" id="student-name" placeholder="e.g. Aarav Mehta" required="" type="text"/>
+</div>
+</div>
+<!-- Parent Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="parent-name">Parent / Guardian Name *</label>
+<div class="relative">
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all shadow-inner" id="parent-name" placeholder="e.g. Rajesh Mehta" required="" type="text"/>
+</div>
+</div>
+<!-- Grade / Class Applying For -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="class-select">Class Applying For *</label>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all shadow-inner cursor-pointer" id="class-select" required="">
+<option value="">Select Grade Level</option>
+<option value="Pre-Nursery">Pre-Nursery</option>
+<option value="Nursery">Nursery</option>
+<option value="KG">Kindergarten (KG)</option>
+<option value="Class 1">Class I</option>
+<option value="Class 2">Class II</option>
+<option value="Class 3">Class III</option>
+<option value="Class 4">Class IV</option>
+<option value="Class 5">Class V</option>
+<option value="Class 6">Class VI</option>
+<option value="Class 7">Class VII</option>
+<option value="Class 8">Class VIII</option>
+<option value="Class 9">Class IX</option>
+<option value="Class 11 Science">Class XI - Science (PCM/PCB)</option>
+<option value="Class 11 Commerce">Class XI - Commerce</option>
+<option value="Class 11 Humanities">Class XI - Humanities</option>
+</select>
+</div>
+<!-- Mobile Number -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="mobile-num">Mobile Number *</label>
+<div class="flex items-center bg-surface-container-low rounded-xl px-3 focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary transition-all shadow-inner">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold pr-2">+91</span>
+<input class="w-full py-3 bg-transparent text-on-surface focus:outline-none font-body-sm text-body-sm" id="mobile-num" pattern="[0-9]{10}" placeholder="9876543210" required="" type="tel"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="email-addr">Email Address *</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all shadow-inner" id="email-addr" placeholder="parent.email@domain.com" required="" type="email"/>
+</div>
+<!-- Previous School -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="prev-school">Previous School &amp; City (Optional)</label>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary font-body-sm text-body-sm transition-all shadow-inner" id="prev-school" placeholder="e.g. DPS Greater Noida" type="text"/>
+</div>
+</div>
+<!-- Consent Checkbox -->
+<div class="flex items-start gap-3 pt-2">
+<input class="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary cursor-pointer" id="sms-consent" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="sms-consent">
+              I agree to receive admission updates, appointment schedules, and notifications via SMS and WhatsApp.
+            </label>
+</div>
+<!-- Form Submit Button -->
+<div class="flex items-center justify-between pt-4 flex-wrap gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">lock</span>
+<span>Candidate data is treated with strict confidentiality.</span>
+</div>
+<button class="bg-secondary text-on-secondary hover:bg-on-secondary-container px-8 py-3.5 rounded-xl font-label-md text-label-md shadow-lg transition-all hover:scale-105 active:scale-95 flex items-center gap-2" type="submit">
+<span>Submit Application Form</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</form>
+<!-- Feedback Alert Toast / Banner (Hidden by default) -->
+<div class="hidden mt-6 p-4 rounded-xl bg-surface-container-high text-primary flex items-center gap-4 transition-all" id="form-success-toast">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary">Inquiry Submitted Successfully!</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reference #ABC-2025-APP has been logged. Our admissions counselor will contact you shortly.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: CONTACT & LOCATION SECTION (#contact) -->
+<section class="py-20 md:py-28 px-6 bg-surface-container-low" id="contact">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col mb-16 max-w-2xl">
+<span class="font-eyebrow-accent text-eyebrow-accent uppercase tracking-widest text-secondary mb-2">Connect With Us</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Campus Visit &amp; Direct Helplines</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Campus Details & Direct Channels -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col justify-between">
+<div class="space-y-6">
+<!-- Address Item -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary mb-1">Campus Address</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Knowledge Park III, Sector Alpha, Greater Noida, National Capital Region (NCR), Uttar Pradesh 201308
+                </p>
+</div>
+</div>
+<!-- Phone Item -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary mb-1">Telephone &amp; Admissions Desk</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  +91 98765 43210 (Admissions Helpline)<br/>
+                  +91 120 4567890 (General Administration)
+                </p>
+</div>
+</div>
+<!-- Email Item -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary mb-1">Official Electronic Mail</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  admissions@abcpublicschool.edu.in<br/>
+                  info@abcpublicschool.edu.in
+                </p>
+</div>
+</div>
+<!-- Visiting Hours Item -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary mb-1">Visitor &amp; Administrative Hours</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Monday to Saturday: 8:30 AM – 3:30 PM<br/>
+<span class="font-eyebrow-accent text-eyebrow-accent text-secondary">Campus tours by appointment on working Saturdays.</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Direct WhatsApp Chat Action Button -->
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary px-6 py-3.5 rounded-xl font-label-md text-label-md hover:bg-on-secondary-container transition-all shadow-md" href="https://wa.me/919876543210" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Chat with Admissions on WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Right: Stylized Google Maps Location Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-3xl p-4 shadow-sm flex flex-col justify-between">
+<div class="relative w-full h-80 lg:h-96 rounded-2xl overflow-hidden shadow-inner" data-location="Knowledge Park III, Sector Alpha, Greater Noida, Uttar Pradesh 201308" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqofZZMToxrd8g9WjI-OwZQoZychDUYGBSdwYm0bkLJcZTlK38evVY7rjhFdsIJmM7stnlH4-O-8xL_U99TmOS-O_-WgY3qFKnzS4JCeXYXB68nMv4oDyG3eKQDI0C4nzFtxFmPY04vowwxeSdm1hR1nay04UpiyDRnI4dTzhybk5DGWQnCp60vS0gPoDdcxHWh-tFZ0BTPM1NutrVMOxiYfoSFiVzHhRQBdfE2w8gwQnRUdf5QURM')">
+<!-- Simulated Map Overlay Elements for Academic Aesthetics -->
+<div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">school</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">ABC Public School Campus</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-xl shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">near_me</span>
+<span class="font-label-sm text-label-sm">Near Metro Knowledge Park II</span>
+</div>
+</div>
+<div class="p-4 flex flex-col sm:flex-row items-center justify-between gap-4 mt-2">
+<div>
+<h5 class="font-headline-sm text-headline-sm text-primary">Getting to Campus</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Located 5 minutes from Noida-Greater Noida Expressway; dedicated visitor parking available.</p>
+</div>
+<a class="shrink-0 inline-flex items-center gap-2 bg-surface-container-high hover:bg-surface-container-highest text-primary px-5 py-2.5 rounded-xl font-label-sm text-label-sm font-semibold transition-colors" href="https://maps.google.com/?q=Knowledge+Park+III+Greater+Noida" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+<span>Get Driving Directions</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING BACK TO TOP BUTTON -->
+<button aria-label="Back to Top" class="fixed bottom-6 right-6 z-40 p-3 rounded-full bg-primary text-on-primary shadow-2xl hover:bg-primary-container transition-all duration-300 opacity-0 pointer-events-none hover:scale-110 active:scale-95" id="back-to-top">
+<span class="material-symbols-outlined text-[24px]">keyboard_arrow_up</span>
+</button>
+<!-- Client-Side Behavior Script -->
+<script>
+    // Gallery Filtering Logic
+    const filterButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryCards = document.querySelectorAll('.gallery-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Toggle active button style
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+
+        // Filter cards
+        galleryCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Form Submission Interactive Feedback
+    const admissionForm = document.getElementById('admission-form');
+    const toast = document.getElementById('form-success-toast');
+
+    if (admissionForm) {
+      admissionForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (toast) {
+          toast.classList.remove('hidden');
+          toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        admissionForm.reset();
+      });
+    }
+
+    // Back to Top button observer
+    const backToTopBtn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+      }
+    });
+
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary mt-space-xl"><div class="max-w-7xl mx-auto px-6 py-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12"><div class="flex flex-col gap-4"><div class="flex items-center gap-3"><img alt="ABC Public School Official Crest" class="h-8 w-auto object-contain bg-surface rounded-full p-0.5" src="https://lh3.googleusercontent.com/aida/AEtjO1W-ohZQRo_01Bai6nv6j1T8Xw32nx4eA4EoUkwtW_rKVYI9UNYdabR3A79iNiHH4q9aqj2ey4Bq8ZRS14i-wrUM3yNtKkSRe562biAfG5tGcX8hBb40ufksF80W9gAzvbGLlO49Zmzxh5sapyrt3ajBEsSqlbjFS2f4GhREt2I3uotx3h9VnzLA9vMv3FXrLPvMAOFWMun_bZ49CZmr-LRfFVWTxJcnIUK8Bq3QRpNKzuty6ACwNpXM-8U"/><span class="font-headline-sm text-headline-sm font-bold text-on-primary">ABC Public School</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">An autonomous, progressive, co-educational institution fostering holistic academic excellence, disciplined integrity, and global leadership since 1994.</p><div class="flex items-center gap-2 text-secondary-fixed-dim font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>CBSE Affiliated Senior Secondary School</span></div></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-secondary-fixed-dim uppercase tracking-wider">Institutional Pillars</span><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="about-us" href="#">Principal's Desk</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="academics" href="#">Curriculum &amp; Stream Options</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="admissions-portal" href="#">Admissions Procedure 2025-26</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="facilities" href="#">Campus Infrastructure &amp; Sports</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="mandatory-disclosure" href="#">CBSE Mandatory Public Disclosure</a></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-secondary-fixed-dim uppercase tracking-wider">Quick Portals</span><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="parent-portal" href="#">Parent Communication Portal</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="pay-fees" href="#">Online Fee Payment Gateway</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="gallery" href="#">Campus Photo &amp; Video Gallery</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="alumni-network" href="#">Alumni Association Network</a><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="circulars-notices" href="#">School Circulars &amp; Notifications</a></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-secondary-fixed-dim uppercase tracking-wider">Campus &amp; Helplines</span><div class="flex items-start gap-2 text-on-primary-container font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim mt-0.5">location_on</span><span>Knowledge Park Sector 4, Institutional Area, Greater City, Uttar Pradesh 201310</span></div><div class="flex items-center gap-2 text-on-primary-container font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">call</span><span>+91 98765 43210 / +91 120 4567890</span></div><div class="flex items-center gap-2 text-on-primary-container font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim">mail</span><span>admissions@abcpublicschool.edu.in</span></div><div class="flex items-center gap-2 text-secondary-fixed-dim font-label-sm text-label-sm mt-1"><span class="material-symbols-outlined text-[16px]">emergency</span><span>24x7 Student Safety &amp; Emergency: +91 98765 00000</span></div></div></div><div class="border-t border-on-primary-container/20 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-primary-container"><div>© 2025 ABC Public School. All Rights Reserved. Reg. No. CBSE/AFF/2130892.</div><div class="flex items-center gap-6"><a class="hover:text-on-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" data-path="terms-conditions" href="#">Terms of Service</a><a class="hover:text-on-primary transition-colors" data-path="mandatory-disclosure" href="#">Right to Information (RTI)</a></div></div></div></footer></body></html>
